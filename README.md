@@ -18,3 +18,13 @@ uvicorn main:app --reload
 ```
 
 https://fastapi.tiangolo.com/tutorial/first-steps/
+
+ENV variables
+```
+ATLAS_URI=
+DB_NAME=
+```
+Api docs on 
+```
+localhost:8000/docs
+```

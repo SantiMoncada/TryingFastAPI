@@ -1,0 +1,273 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webuu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="./img/logo.svg" alt="logo">
+            <h4 class="logo">ワイフ</h4>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="nav-link" href="#">Kawaii</a></li>
+                <li><a class="nav-link" href="#">Products</a></li>
+                <li><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <img src="./img/cart.svg" alt="cart">
+        </div>
+
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Bebas Neue',
+                    cursive;
+            }
+
+            header {
+                display: flex;
+                margin: auto;
+                width: 90%;
+                height: 10vh;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .logo-container,
+            .nav-links,
+            .cart {
+                display: flex;
+            }
+
+            .logo-container {
+                flex: 1;
+            }
+
+            .logo {
+                font-weight: 400;
+                margin: 5px;
+            }
+
+            nav {
+                flex: 2;
+            }
+
+            .nav-links {
+                justify-content: space-around;
+                list-style: none;
+            }
+
+            .nav-link {
+                color: #5f5f79;
+                font-size: 18px;
+                text-decoration: none;
+            }
+
+            .cart {
+                flex: 1;
+                justify-content: flex-end;
+            }
+
+            .presentation {
+                display: flex;
+                width: 90%;
+                margin: auto;
+                min-width: 80vh;
+                align-items: center;
+            }
+
+            .introduction {
+                flex: 1;
+            }
+
+            .intro-text h1 {
+                font-size: 38px;
+                font-weight: 500;
+                background: linear-gradient(to right, #494964, #6f6f89);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            .intro-text p {
+                margin-top: 5px;
+                font-size: 22px;
+                color: #585772;
+            }
+
+            .cta {
+                padding: 50px 0px 0px 0px;
+            }
+
+            .cta-select {
+                border: 2px solid #c36cbb;
+                background-color: transparent;
+                color: #c36cbb;
+                width: 150px;
+                height: 50px;
+                cursor: pointer;
+                font-size: 15px;
+            }
+
+            .cta-add {
+                background: #c36cbb;
+                width: 150px;
+                height: 50px;
+                cursor: pointer;
+                font-size: 15px;
+                border: none;
+                color: white;
+                margin: 30px 0px 0px 30px;
+            }
+
+            .cover {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+            }
+
+            .cover img {
+                margin-top: 30px;
+                height: 70vh;
+                width: auto;
+                filter: drop-shadow(25px 10px 7px rgb(241, 163, 176));
+                animation: drop 2s ease-in-out;
+            }
+
+            .big-circle {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                z-index: -1;
+                opacity: 0.4;
+                height: 80%;
+            }
+
+            .medium-circle {
+                position: absolute;
+                top: 25%;
+                right: 23%;
+                z-index: -1;
+                height: 60%;
+                opacity: 0.5;
+            }
+
+            .small-circle {
+                position: absolute;
+                bottom: 0%;
+                left: 30%;
+                z-index: -1;
+                opacity: 1;
+            }
+
+            .waifu-select {
+                width: 15%;
+                display: flex;
+                justify-content: space-around;
+                position: absolute;
+                right: 20%;
+                margin-top: 30px;
+            }
+
+            @keyframes drop {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-40px);
+                }
+
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+
+            @media screen and (max-width: 1024px) {
+                .presentation {
+                    flex-direction: column;
+                }
+
+                .introduction {
+                    margin-top: 5vh;
+                    text-align: center;
+                }
+
+                .intro-text h1 {
+                    font-size: 30px;
+                }
+
+                .intro-text p {
+                    font-size: 18px;
+                }
+
+                .cta {
+                    padding: 10px 0px 0px 0px;
+                }
+
+                .laptop-select {
+                    bottom: 5%;
+                    right: 50%;
+                    width: 50%;
+                    transform: translate(50%, 5%);
+                }
+
+                .cover img {
+                    height: 10%;
+                }
+
+                .small-circle,
+                .medium-circle,
+                .big-circle {
+                    opacity: 0.5;
+                }
+            }
+        </style>
+    </header>
+
+    <main>
+        <section class="presentation">
+            <div class="introduction">
+                <div class="intro-text">
+                    <h1>Zero Two</h1>
+                    <p>
+                        静かな夜にあなたに同行するあなたの最高のワイフ
+                        一人で..... LOVE !!!
+                    </p>
+                </div>
+                <div class="cta">
+                    <button class="cta-select">カワイイ女の子</button>
+                    <button class="cta-add">Get your Waifu</button>
+                </div>
+            </div>
+            <div class="cover">
+                <img src="./public/img/zerotwo.png" alt="anime girl">
+            </div>
+        </section>
+
+        <div class="waifu-select">
+            <img src="./img/arrow-left.svg" alt="">
+            <img src="./img/dot.svg" alt="">
+            <img src="./img/dot-full.svg" alt="">
+            <img src="./img/dot-full.svg" alt="">
+            <img src="./img/arrow-right.svg" alt="">
+        </div>
+
+        <img class="big-circle" src="./img/big-eclipse.svg" alt="">
+        <img class="medium-circle" src="./img/mid-eclipse.svg" alt="">
+        <img class="small-circle" src="./img/small-eclipse.svg" alt="">
+    </main>
+</body>
+
+</html>
