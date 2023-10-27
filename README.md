@@ -1,10 +1,10 @@
 How to run
 
-Set up the viertual env
+Set up the virtual env
 ```
-ptyhon3 -m venv virrtual_env
+ptyhon3 -m venv virtual_env
 
-source virrtual_env/bin/activate
+source virtual_env/bin/activate
 ```
 
 Install fastapi
