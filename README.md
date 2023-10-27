@@ -16,3 +16,5 @@ Start server
 ```
 uvicorn main:app --reload
 ```
+
+https://fastapi.tiangolo.com/tutorial/first-steps/
